@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>DocumentaryHub l Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="loader_bg">
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">Documentary<span>Hub</span></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="advertising.html">Advertising</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container2">
+        <div class="row">
+            <div class="box-slider">
+                <div class="img">
+                    <p class="info">
+                        Janrey Hilbert DG. Mendoza - main web dev/person who forced richan to become the leader
+                    </p>
+                    <img src="image/Janrey.jpg" alt="Janrey Hilbert Dg. Mendoza" />
+                </div>
+                <div class="img">
+                    <p class="info">
+                        Richan Nicholaus Oreta - forced to be the leader/backup web dev
+                    </p>
+                    <img src="image/Richan.png" alt="Richan Nicholaus Oreta" />
+                </div>
+                <div class="img">
+                    <p class="info">
+                        Lana Ysabel Soto - graphic designer/tetris addict
+                    </p>
+                    <img src="image/Lana.jpg" alt="Lana Ysabel Soto" />
+                </div>
+                <div class="img">
+                    <p class="info">
+                        Kimi Ulrich Santos - morse code specialist/cryptographer
+                    </p>
+                    <img src="image/Kimi.jpeg" alt="Kimi Ulrich Santos" />
+                </div>
+                <div class="img">
+                    <p class="info">
+                        Aizelle Camba - member/superwoman
+                    </p>
+                    <img src="image/Aizelle.jpeg" alt="Aizelle Camba" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-content">
+            <div class="footer-center">
+                <h2 class="information">Information</h2>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>2 F Calderon Street, Corner JP Rizal Street</span>Kalumpang, Marikina City</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>09954052910</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">documentaryhubfiles@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-left">
+                <h2 class="information">Documentary<span>Hub</span></h2>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    l
+                    <a href="advertising.html">Advertising</a>
+                    l
+                    <a href="about.html">About</a>
+                    l
+                    <a href="team.html">Team</a>
+                </div>
+
+                <div class="footer-company-name">Copyright © 2023 <strong>DocumentaryHub</strong>
+                    All rights reserved</div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-company-about">
+                    <h2 class="information">About Us</h2>
+                    <strong>We are group 5. We created this website because our school forced us to and we will use this
+                        website to document our school project which is making a youtube channel.</strong>
+                </div>
+
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100090170187025&is_tour_completed=true"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCk4X_GgaNfqmcVHkxJLt8nw"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+
+        AOS.int({
+            once: true,
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $(".loader_bg").fadeToggle();
+        }, 2000);
+
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        };
+    </script>
+</body>
+
+</html>
